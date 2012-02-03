@@ -1,0 +1,7 @@
+<project name="missingKeys">
+	<target name="build">
+		<mkdir dir="target"/>
+		<javac srcdir="src" destdir="target" />
+		<jar jarfile="missingKeys-1.0.0.jar" basedir="target"/>
+	</target>
+</project>
