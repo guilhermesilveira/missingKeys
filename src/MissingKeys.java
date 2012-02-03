@@ -15,8 +15,12 @@ public class MissingKeys {
 				missing.add((String) key);
 			}
 		}
-		for(String key : missing) {
-			System.out.println(key + " = " + base.getProperty(key));
+		if(!missing.isEmpty()) {
+			System.out.println("Missing keys found!!!!");
+			for(String key : missing) {
+				System.out.println(key + " = " + base.getProperty(key));
+			}
+			System.exit(1);
 		}
 	}
 }
